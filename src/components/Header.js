@@ -2,7 +2,7 @@ import "../styles/header.css";
 
 const Header = () => {
   return (
-    <div className="wrap">
+    <div className="header">
       <div className="logo">LOGO</div>
       <div className="menu">
         <div className="login">로그인</div>
