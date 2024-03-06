@@ -24,9 +24,11 @@
   margin-right: 52px;
 }
 .login:hover,
-.register:hover {
+.register:hover,
+.logout:hover {
   color: #3a7231;
 }
-.register {
+.register,
+.logout {
   margin-right: 40px;
 }
