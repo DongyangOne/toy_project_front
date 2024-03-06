@@ -4,6 +4,6 @@
 
 필요한 모듈을 다운
 
-## npm run
+## npm start
 
 실행
