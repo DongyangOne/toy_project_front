@@ -1,9 +1,9 @@
-import "./App.css";
+import Home from "./pages/Home";
 
 function App() {
   return (
     <div className="App">
-      <h1>일기장 만들기</h1>
+      <Home />
     </div>
   );
 }

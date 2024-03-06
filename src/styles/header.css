@@ -1,0 +1,32 @@
+.wrap {
+  width: 100%;
+  height: 80px;
+  background-color: #81c784;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  color: white;
+  font-size: 32px;
+  font-weight: bold;
+  margin-left: 40px;
+}
+
+.menu {
+  display: flex;
+  font-size: 24px;
+  color: white;
+}
+
+.login {
+  margin-right: 52px;
+}
+.login:hover,
+.register:hover {
+  color: #3a7231;
+}
+.register {
+  margin-right: 40px;
+}
