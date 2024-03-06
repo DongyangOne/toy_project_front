@@ -1,8 +1,8 @@
 import {BrowserRouter, Route, Routes} from "react-router-dom";
 import Home from "./pages/Home";
-import Header from "./components/Header";
 import Creatediary from "./pages/Creatediary";
 import DiaryList from "./pages/DiaryList";
+import DiaryDetail from "./pages/DiaryDetail";
 
 function App() {
   return (
@@ -12,6 +12,7 @@ function App() {
           <Route path="/" element={<Home />}></Route>
           <Route path="/diary" element={<Creatediary />}></Route>
           <Route path="/diary-list" element={<DiaryList />}></Route>
+          <Route path="/diary-detail/*" element={<DiaryDetail />}></Route>
         </Routes>
       </BrowserRouter>
     </div>
