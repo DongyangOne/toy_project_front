@@ -2,6 +2,7 @@ import Header from "../components/Header";
 import "../styles/create-diary.css";
 
 const Creatediary = () => {
+  const date = new Date();
   return (
     <>
       <Header />
@@ -9,7 +10,10 @@ const Creatediary = () => {
         <div className="diary-form">
           <div className="dateInput">
             <label>날짜</label>
-            <div className="date">2024.03.06</div>
+            <div className="date">{`${date.getFullYear()}.${(
+              "0" +
+              (date.getMonth() + 1)
+            ).slice(-2)}.${("0" + date.getDate()).slice(-2)}`}</div>
           </div>
           <div className="title-weather">
             <div className="title">
