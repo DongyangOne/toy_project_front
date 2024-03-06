@@ -1,0 +1,133 @@
+.create-diary {
+  background-color: #81c784;
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  padding-top: 46px;
+}
+
+.diary-form {
+  width: 1243px;
+  height: 1048px;
+  background-color: white;
+  box-shadow: 0px 4px 10px 0px rgb(0, 0, 0, 0.25);
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  padding-top: 36px;
+}
+
+label {
+  font-size: 16px;
+  font-weight: bold;
+
+  color: #b0b0b0;
+}
+
+.dateInput {
+  width: 1149px;
+  height: 61px;
+  border-bottom: 1px solid #b0b0b0;
+}
+
+.date {
+  margin-top: 12px;
+  font-size: 21px;
+  font-weight: 500;
+}
+
+.title-weather {
+  margin-top: 16px;
+  display: flex;
+  width: 1149px;
+  height: 61px;
+}
+
+.title {
+  width: 70%;
+  margin-right: 30px;
+}
+
+.title-input {
+  padding: 0;
+  width: 100%;
+  height: 30px;
+  margin-top: 12px;
+  border: none;
+  border-bottom: 1px solid #b0b0b0;
+
+  font-size: 21px;
+  font-weight: 500;
+}
+
+.weather {
+  width: 30%;
+}
+
+.weather-input {
+  padding: 0;
+  width: 100%;
+  height: 30px;
+  margin-top: 12px;
+  border: none;
+  border-bottom: 1px solid #b0b0b0;
+
+  font-size: 21px;
+  font-weight: 500;
+}
+
+.title-input::placeholder,
+.weather-input::placeholder {
+  color: #e7e7e7;
+}
+
+.content {
+  width: 1149px;
+  margin-top: 31px;
+}
+
+.content-input {
+  width: 1135px;
+  height: 679px;
+  resize: none;
+  margin-top: 17px;
+  border: none;
+  border: 1px solid #b0b0b0;
+  font-size: 21px;
+  font-weight: 500;
+  padding-top: 18px;
+  padding-left: 10px;
+}
+
+.content-input::placeholder {
+  color: #e7e7e7;
+}
+
+.btnWrap {
+  width: 1149px;
+  height: 57px;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.diarySubmitBtn {
+  width: 333px;
+  height: 57px;
+  background-color: #81c784;
+  border: none;
+
+  margin-top: 31px;
+  color: white;
+  font-weight: bolder;
+  font-size: 20px;
+  border-radius: 10px;
+  margin-bottom: 40px;
+}
+
+input:focus,
+textarea:focus {
+  outline: none;
+}
