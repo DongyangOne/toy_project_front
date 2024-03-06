@@ -6,7 +6,6 @@ import Creatediary from "./pages/Creatediary";
 function App() {
   return (
     <div className="App">
-      <Header />
       <BrowserRouter>
         <Routes>
           <Route path="/" element={<Home />}></Route>
