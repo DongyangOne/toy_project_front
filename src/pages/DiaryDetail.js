@@ -34,6 +34,9 @@ const DiaryDetail = () => {
               placeholder="내용을 입력해주세요."
             ></div>
           </div>
+          <div className="btnWrap">
+            <button className="diarySubmitBtn">작성완료</button>
+          </div>
         </div>
       </div>
     </>

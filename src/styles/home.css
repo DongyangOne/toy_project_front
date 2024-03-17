@@ -1,0 +1,43 @@
+.home-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 1440;
+  background: linear-gradient(to bottom, #81c784 404px, #FFFFFF 50%);
+}
+
+.writing-btn {
+  width: 385px;
+  height: 57px;
+  padding: 10px 20px;
+  background-color: #81c784;
+  border: none;
+  border-radius: 10px;
+  color: white;
+  cursor: pointer;
+  font-size: 24px;
+  position: absolute;
+  top: 225px; 
+  z-index: 1; 
+}
+
+.tree-container {
+  width: 960px;
+  height: 555px; 
+  top : 172px;
+  background-color: white;
+  margin-top: 20px;
+  border: white; 
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); /* 그림자 효과 추가 */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative; 
+  border-radius: 20px;
+}
+
+.tree-image {
+  max-width: 100%;
+  height: auto;
+}
