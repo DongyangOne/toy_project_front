@@ -20,8 +20,22 @@ const Header = () => {
           <div className="logout">로그아웃</div>
         ) : (
           <>
-            <div className="login">로그인</div>
-            <div className="register">회원가입</div>
+            <div
+              className="login"
+              onClick={() => {
+                navigate("/login");
+              }}
+            >
+              로그인
+            </div>
+            <div
+              className="register"
+              onClick={() => {
+                navigate("/join");
+              }}
+            >
+              회원가입
+            </div>
           </>
         )}
       </div>
