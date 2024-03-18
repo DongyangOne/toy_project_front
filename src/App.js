@@ -3,6 +3,8 @@ import Home from "./pages/Home";
 import Creatediary from "./pages/Creatediary";
 import DiaryList from "./pages/DiaryList";
 import DiaryDetail from "./pages/DiaryDetail";
+import Join from "./pages/join";
+import Login from "./pages/login";
 
 function App() {
   return (
@@ -13,6 +15,8 @@ function App() {
           <Route path="/diary" element={<Creatediary />}></Route>
           <Route path="/diary-list" element={<DiaryList />}></Route>
           <Route path="/diary-detail/*" element={<DiaryDetail />}></Route>
+          <Route path="/join" element={<Join />}></Route>
+          <Route path="/login" element={<Login />}></Route>
         </Routes>
       </BrowserRouter>
     </div>
