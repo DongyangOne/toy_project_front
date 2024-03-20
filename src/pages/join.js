@@ -26,7 +26,6 @@ const Join = () => {
       <Header />
       <div className="join-form">
         <h2>Sign up</h2>
-
         <label className="join-label">아이디</label>
         <input
           className="join-input1"
@@ -38,20 +37,7 @@ const Join = () => {
         <button className="checkbutton" onClick={handleDuplicateCheck}>
           중복 확인
         </button>
-        <label className="join-label">비밀번호</label>
-        <label className="join-label ">아이디</label>
-        <div className="id-container">
-          <input
-            className="join-input1"
-            type="text"
-            placeholder="아이디를 입력하세요"
-            value={id}
-            onChange={e => setId(e.target.value)}
-          />
-          <button className="checkbutton" onClick={handleDuplicateCheck}>
-            중복 확인
-          </button>
-        </div>
+
         <label className="join-label ">비밀번호</label>
         <input
           className="join-input2"
