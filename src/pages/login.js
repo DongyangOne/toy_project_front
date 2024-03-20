@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import Header from '../components/Header'; 
 import '../styles/login.css'; // 경로 확인
 
 const Login = () => {
