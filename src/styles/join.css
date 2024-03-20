@@ -4,14 +4,16 @@
   align-items: center;
   justify-content: center;
   height: 100vh;
-  background-color: #ffffff; 
+  background-color: #ffffff;
 }
 
 .join-form {
   width: 488px;
-  height: 527px; 
-  padding: 40px;
+  height: 527px;
+  align-items: center;
+  justify-content: center;
   background: #FFFFFF;
+  box-sizing: border-box;
 }
 
 .join-form h2 {
@@ -22,56 +24,63 @@
 }
 
 .join-label { 
+  display: block; 
   color: #adc8af; 
   margin-bottom: 8px; 
   font-weight: bold; 
   font-size: 20px;
 }
 
-.join-input1 {
+.id-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
   width: 488px;
+  margin-bottom: 20px;
+}
+
+.join-input1, .join-input2, .join-button, .checkbutton {
   height: 57px;
   padding: 15px;
-  margin-bottom: 20px;
   border: 1px solid #adc8af;
   border-radius: 10px;
   font-size: 20px;
+  box-sizing: border-box;
+  margin-bottom: 10px;
+}
+
+.join-input1 {
+  width: 318px;
+  margin-right: 8px;
 }
 
 .join-input2 {
-  width: 318px;
-  height: 57px;
-  padding: 15px;
-  margin-bottom: 20px;
-  border: 1px solid #adc8af;
-  border-radius: 10px;
-  font-size: 20px;
+  width: 488px;
+  margin-right: 8px;
 }
 
-.join-input::placeholder {
+.join-input1::placeholder, .join-input2::placeholder {
   color: #e7e7e7; 
   font-weight: bold;
   font-size: 20px;
 }
 
-.join-button {
-  width: 100%;
-  padding: 15px;
-  background-color: #81c784; /* 주 색상 */
+.checkbutton {
+  width: 158px; 
+  background-color: #81c784;
   color: white;
   border: none;
-  border-radius: 5px;
   cursor: pointer;
-  margin-top: 20px; /* 버튼 상단 여백 추가 */
+  font-weight: bold;
 }
 
-.checkbutton { /* 중복 확인 버튼 스타일 */
-  width: 100%;
-  padding: 15px;
-  margin-top: 10px; /* 여백 조정 */
-  background-color: #adc8af; /* 버튼 색상 */
+.join-button {
+  width: 488px;
+  margin-top: 20px;
+  background-color: #81c784;
   color: white;
   border: none;
-  border-radius: 5px;
   cursor: pointer;
+  font-weight: bold;
 }
+
