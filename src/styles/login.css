@@ -9,9 +9,9 @@
 
 .login-form {
   width: 488px;
-  height: 452px;;
   padding: 40px;
   background: #FFFFFF;
+  box-sizing: border-box; /* 박스 사이징 방법 변경 */
 }
 
 .login-form h2 {
@@ -23,18 +23,20 @@
 
 .login-label {
   color: #adc8af; 
-  margin-bottom: 8px; 
+  margin: 2px; 
+  padding: 2px;
   font-weight: bold; 
   font-size: 20px;
 }
 
-.login-input {
-  width: 100%;
-  height: 57;
-  padding: 15px;
+.login-input,
+.login-button {
+  width: 488px; /* 너비 고정 */
+  height: 57px; /* 높이 고정 */
   margin-bottom: 20px;
   border: 1px solid #adc8af;
   border-radius: 10px;
+  box-sizing: border-box; /* 박스 사이징 방법 변경 */
 }
 
 .login-input::placeholder {
@@ -44,13 +46,13 @@
 }
 
 .login-button {
-  width: 100%;
   padding: 15px;
   background-color: #81c784; /* 주 색상 */
   color: white;
   border: none;
-  border-radius: 5px;
   cursor: pointer;
+  font-size: 20px;
+  font-weight: bold;
 }
 
 .link-container {
@@ -58,10 +60,7 @@
   margin-top: 20px;
 }
 
-.link-container a {
-  color: #b0b0b0;
-  text-decoration: none;
-}
+.link-container a,
 .link-container p {
   color: #b0b0b0;
   text-decoration: none;
