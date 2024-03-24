@@ -1,25 +1,9 @@
 import React, {useState} from "react";
-import "../styles/join.css"; // 경로 확인
+import "../styles/join.css";
 import Header from "../components/Header";
 
 const Join = () => {
-  const [id, setId] = useState("");
-  const [email, setEmail] = useState("");
-  const [password, setPassword] = useState("");
-  const [confirmPassword, setConfirmPassword] = useState("");
 
-  const handleSignUp = () => {
-    console.log("Signing up with:", id, email, password);
-    // 회원가입 로직 추가
-  };
-
-  const handleDuplicateCheck = () => {
-    console.log("Checking for duplicate id:", id);
-    // 아이디 중복 검사 로직 추가
-
-    console.log("Signing up with:", id, email, password);
-    // Add sign-up logic here
-  };
 
   return (
     <div className="join-container">
@@ -31,10 +15,8 @@ const Join = () => {
           className="join-input1"
           type="text"
           placeholder="아이디를 입력하세요"
-          value={id}
-          onChange={e => setId(e.target.value)}
         />
-        <button className="checkbutton" onClick={handleDuplicateCheck}>
+        <button className="checkbutton">
           중복 확인
         </button>
 
@@ -43,18 +25,14 @@ const Join = () => {
           className="join-input2"
           type="password"
           placeholder="비밀번호를 입력하세요"
-          value={password}
-          onChange={e => setPassword(e.target.value)}
         />
         <label className="join-label ">비밀번호 확인</label>
         <input
           className="join-input2"
           type="password"
           placeholder="비밀번호를 다시 입력하세요"
-          value={confirmPassword}
-          onChange={e => setConfirmPassword(e.target.value)}
         />
-        <button className="join-button" onClick={handleSignUp}>
+        <button className="join-button">
           회원가입
         </button>
       </div>
