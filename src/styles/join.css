@@ -19,6 +19,7 @@
 .join-form h2 {
   color: #81c784;
   text-align: center;
+  margin-top: 0px;
   margin-bottom: 24px;
   font-size: 64px;
 }
@@ -41,22 +42,21 @@
 
 .join-input1, .join-input2, .join-button, .checkbutton {
   height: 57px;
-  padding: 15px;
+  padding: 10px;
   border: 1px solid #adc8af;
   border-radius: 10px;
   font-size: 20px;
   box-sizing: border-box;
-  margin-bottom: 10px;
 }
 
 .join-input1 {
-  width: 318px;
+  width: 331px;
   margin-right: 8px;
 }
 
 .join-input2 {
   width: 488px;
-  margin-right: 8px;
+  margin-bottom: 20px;
 }
 
 .join-input1::placeholder, .join-input2::placeholder {
@@ -72,6 +72,7 @@
   border: none;
   cursor: pointer;
   font-weight: bold;
+  box-sizing: border-box;
 }
 
 .join-button {

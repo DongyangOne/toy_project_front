@@ -8,16 +8,19 @@
 }
 
 .login-form {
+  display: flex;
+  flex-direction: column;
   width: 488px;
-  padding: 40px;
-  background: #FFFFFF;
+  height: 451px;
+  background: #ffffff;
   box-sizing: border-box; /* 박스 사이징 방법 변경 */
 }
 
 .login-form h2 {
   color: #81c784;
   text-align: center;
-  margin-bottom: 24px;
+  margin-top: 0px;
+  margin-bottom: 10px;
   font-size: 64px;
 }
 
@@ -33,6 +36,7 @@
 .login-button {
   width: 488px;
   height: 57px; 
+  padding: 10px;
   margin-bottom: 20px;
   border: 1px solid #adc8af;
   border-radius: 10px;
@@ -46,6 +50,7 @@
 }
 
 .login-button {
+  margin-top: 15px;
   padding: 15px;
   background-color: #81c784; 
   color: white;
@@ -56,12 +61,15 @@
 }
 
 .link-container {
+  height: 30px;
   text-align: center;
-  margin-top: 20px;
+  margin-top: 0px;
+  margin-bottom: 5px;
 }
 
-.link-container a,
 .link-container p {
   color: #b0b0b0;
   text-decoration: none;
+  text-align: center;
+  
 }

@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import Header from '../components/Header';
-import '../styles/join.css'; // Make sure the path is correct
+import '../styles/join.css'; 
 
 const Join = () => {
   const [id, setId] = useState('');
@@ -10,12 +10,12 @@ const Join = () => {
 
   const handleSignUp = () => {
     console.log('Signing up with:', id, email, password);
-    // Add sign-up logic here
+      // 회원가입 로직 추가
   };
 
   const handleDuplicateCheck = () => {
     console.log('Checking for duplicate id:', id);
-    // Add ID duplication check logic here
+    // 아이디 중복 검사 로직 추가
   };
 
   return (

@@ -1,10 +1,12 @@
 import React, { useState } from 'react';
-import Header from '../components/Header'; 
-import '../styles/login.css'; // 경로 확인
+import Header from '../components/Header';
+import { useNavigate } from 'react-router-dom'; 
+import '../styles/login.css'; 
 
 const Login = () => {
   const [id, setId] = useState('');
   const [password, setPassword] = useState('');
+  const navigate = useNavigate(); 
 
   const handleLogin = () => {
     console.log('Logging in with:', id, password);
@@ -13,6 +15,7 @@ const Login = () => {
 
   return (
     <div className="login-container">
+      <Header /> 
       <div className="login-form">
         <h2>Sign in</h2>
         <label htmlFor="login-id" className="login-label">아이디</label>
@@ -34,8 +37,9 @@ const Login = () => {
           onChange={(e) => setPassword(e.target.value)}
         />
         <button className="login-button" onClick={handleLogin}>로그인</button>
-        <div className="link-container">
-          <p>아이디가 없으신가요? <a href="/register">회원가입하기</a></p>
+        <div className="link-container"
+          onClick={() => navigate("/join")}>
+          <p>아이디가 없으신가요? 회원가입하기</p>
         </div>
       </div>
     </div>
