@@ -25,9 +25,9 @@
 }
 
 .login-label {
+  display: block; 
   color: #adc8af; 
-  margin: 2px; 
-  padding: 2px;
+  margin-bottom: 8px; 
   font-weight: bold; 
   font-size: 20px;
 }

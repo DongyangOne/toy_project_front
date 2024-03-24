@@ -50,8 +50,9 @@
 }
 
 .join-input1 {
-  width: 331px;
-  margin-right: 8px;
+  width: 318px;
+  margin-right: 12px;
+  margin-bottom: 20px;
 }
 
 .join-input2 {
@@ -77,7 +78,7 @@
 
 .join-button {
   width: 488px;
-  margin-top: 20px;
+  margin-top: 10px;
   background-color: #81c784;
   color: white;
   border: none;
