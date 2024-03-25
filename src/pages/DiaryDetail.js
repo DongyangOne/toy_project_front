@@ -6,8 +6,8 @@ const DiaryDetail = () => {
   const {id} = useParams();
   return (
     <>
+      <Header />
       <div className="diaryDetail">
-        <Header />
         <div className="diary-form">
           <div className="dateInput">
             <label>날짜</label>

@@ -3,7 +3,7 @@ import Header from "../components/Header";
 import "../styles/diary-list.css";
 const DiaryList = () => {
   return (
-    <>
+    <div>
       <Header />
       <div className="diaryList">
         <DiaryListItem />
@@ -11,7 +11,7 @@ const DiaryList = () => {
         <DiaryListItem />
         <DiaryListItem />
       </div>
-    </>
+    </div>
   );
 };
 
