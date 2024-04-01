@@ -15,7 +15,7 @@ const Login = () => {
   const handleLogin = async () => {
     try {
       await login(id, pwd);
-      navigate('/Home');
+      navigate('/');
     } catch (error) {
       alert('아이디/비밀번호가 다릅니다.'); 
     }

@@ -3,9 +3,9 @@ import axios from 'axios';
 
 export const login = async (id, password) => {
   try {
-    const response = await axios.post('http://218.146.29.203:8080/login', {
-      id,
-      password,
+    const response = await axios.post('http://218.146.29.203:8080/user/login', {
+      username : id,
+      password : password,
     });
     console.log(response.data);
     return response.data;
@@ -18,9 +18,10 @@ export const login = async (id, password) => {
 
 export const join = async (id, password) => {
   try {
-    const response = await axios.post('http://218.146.29.203:8080/join', {
-      id,
-      password,
+    const response = await axios.post('http://218.146.29.203:8080/user/register', {
+      username : id,
+      password : password,
+      name: "혜림"
     });
     console.log(response.data);
     return response.data;

@@ -10,6 +10,8 @@ const Join = () => {
   const [pwdCheck, setPwdCheck] = useState('');
   const navigate = useNavigate();
 
+  
+
   const handleCheckId = async () => {
     if (!id) {
       alert('아이디를 입력해주세요.');
