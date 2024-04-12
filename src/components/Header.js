@@ -1,17 +1,22 @@
 import {useNavigate} from "react-router-dom";
 import "../styles/header.css";
 import {useEffect, useState} from "react";
+import {logout} from "../apiCalls";
 
 const Header = () => {
   const navigate = useNavigate();
   const [isLogin, setIsLogin] = useState(false);
 
-  const session = window.sessionStorage.getItem("session");
+  const logout = () => {
+    window.sessionStorage.removeItem("session");
+    setIsLogin(false);
+  };
+
   useEffect(() => {
-    if (session) {
+    if (window.sessionStorage.getItem("session")) {
       setIsLogin(true);
     }
-  }, [session]);
+  }, []);
 
   return (
     <div className="header">
@@ -25,7 +30,9 @@ const Header = () => {
       </div>
       <div className="menu">
         {isLogin ? (
-          <div className="logout">로그아웃</div>
+          <div onClick={logout} className="logout">
+            로그아웃
+          </div>
         ) : (
           <>
             <div
