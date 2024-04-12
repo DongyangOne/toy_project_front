@@ -1,19 +1,18 @@
 import axios from "axios";
 
 export const login = async (id, password) => {
-  try {
-    const response = await axios.post("http://218.146.29.203:8080/user/login", {
+  await axios
+    .post("http://218.146.29.203:8080/user/login", {
       username: id,
       password: password,
+    })
+    .then(res => {
+      window.sessionStorage.setItem("session", id);
+      console.log(res.data);
+    })
+    .catch(error => {
+      console.log(error);
     });
-    console.log(response.data);
-    window.sessionStorage.setItem("session", id);
-    console.log(window.sessionStorage.getItem("session"));
-    return response.data;
-  } catch (error) {
-    console.error("Login error:", error);
-    throw error;
-  }
 };
 
 export const join = async (id, password) => {
