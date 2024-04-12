@@ -1,7 +1,6 @@
 import {useNavigate} from "react-router-dom";
 import "../styles/header.css";
 import {useEffect, useState} from "react";
-import {logout} from "../apiCalls";
 
 const Header = () => {
   const navigate = useNavigate();
