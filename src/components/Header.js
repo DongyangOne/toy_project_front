@@ -1,10 +1,19 @@
 import {useNavigate} from "react-router-dom";
 import "../styles/header.css";
+import {useEffect, useState} from "react";
 
 const Header = () => {
   const navigate = useNavigate();
-  const isLogin = false; // 로그인 되어있는 헤더 확인 시 true 변경 후 확인
-
+  const [isLogin, setIsLogin] = useState(false);
+  const logout = () => {
+    window.sessionStorage.removeItem("session");
+    setIsLogin(false);
+  };
+  useEffect(() => {
+    if (window.sessionStorage.getItem("session")) {
+      setIsLogin(true);
+    }
+  }, []);
   return (
     <div className="header">
       <div
@@ -17,7 +26,9 @@ const Header = () => {
       </div>
       <div className="menu">
         {isLogin ? (
-          <div className="logout">로그아웃</div>
+          <div onClick={logout} className="logout">
+            로그아웃
+          </div>
         ) : (
           <>
             <div
@@ -42,5 +53,4 @@ const Header = () => {
     </div>
   );
 };
-
 export default Header;
