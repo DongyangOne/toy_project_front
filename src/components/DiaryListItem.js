@@ -1,20 +1,20 @@
 import {useNavigate} from "react-router-dom";
 
-const DiaryListItem = Props => {
+const DiaryListItem = ({ id, date, title, weather }) => {
   const navigate = useNavigate();
   return (
     <>
       <div
         className="diary-item"
         onClick={() => {
-          navigate("/diary-detail");
+          navigate(`/diary-detail/${id}`);  
         }}
       >
         <div className="Lleft">
-          <div className="Ldate">2024.02.09</div>
-          <div className="Ltitle">오늘의 일기 - 날씨가 흐려서 아쉬웠던 날</div>
-        </div>
-        <div className="Lweather">날씨 : 흐림</div>
+        <div className="Ldate">{date}</div>
+        <div className="Ltitle">{title}</div>
+      </div>
+      <div className="Lweather">날씨: {weather}</div>
       </div>
     </>
   );

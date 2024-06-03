@@ -1,9 +1,26 @@
-import {useParams} from "react-router-dom";
+import React, { useEffect, useState } from "react";
 import Header from "../components/Header";
-import "../styles/diary-detail.css";
+import "../styles/diary-detail.css"
+import { useParams } from "react-router-dom";
+import { getDiaryById } from "../apiCalls"; 
 
 const DiaryDetail = () => {
-  const {id} = useParams();
+  const { id } = useParams();
+  const [diary, setDiary] = useState({});
+
+  useEffect(() => {
+    async function fetchDiary() {
+      try {
+        const diaryData = await getDiaryById(id); 
+        setDiary(diaryData);
+      } catch (error) {
+        console.error("Error fetching diary:", error);
+      }
+    }
+
+    fetchDiary();
+  }, [id]); 
+
   return (
     <>
       <Header />
@@ -11,32 +28,27 @@ const DiaryDetail = () => {
         <div className="diary-form">
           <div className="dateInput">
             <label>날짜</label>
-            <div className="date">2024.02.13</div>
+            <div className="date">{diary.date}</div>
           </div>
           <div className="title-weather">
             <div className="title">
               <label>제목</label>
               <div className="title-input" type="text">
-                오늘
+                {diary.title}
               </div>
             </div>
             <div className="weather">
               <label>날씨</label>
               <div className="weather-input" type="text">
-                흐림
+                {diary.weather}
               </div>
             </div>
           </div>
           <div className="content">
             <label>내용</label>
-            <div
-              className="content-input"
-              placeholder="내용을 입력해주세요."
-            ></div>
+            <div className="content-input">{diary.content}</div>
           </div>
-          <div className="btnWrap">
-            <button className="diarySubmitBtn">작성완료</button>
-          </div>
+          <button className="diarySubmitBtn">작성완료</button>
         </div>
       </div>
     </>

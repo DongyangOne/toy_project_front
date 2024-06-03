@@ -14,6 +14,7 @@ const Home = () => {
             navigate("/diary");
           } else {
             alert("로그인이 필요한 서비스입니다.");
+            navigate("/login");
           }
         }}
         className="writing-btn"
@@ -22,6 +23,7 @@ const Home = () => {
       </button>
       <div className="tree-container">
         {/* 나무 이미지 */}
+
         <img
           src="/path/to/your/tree/image.png"
           alt="Tree"
@@ -31,5 +33,4 @@ const Home = () => {
     </div>
   );
 };
-
 export default Home;

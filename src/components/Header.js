@@ -10,7 +10,6 @@ const Header = () => {
     window.sessionStorage.removeItem("session");
     setIsLogin(false);
   };
-
   useEffect(() => {
     if (window.sessionStorage.getItem("session")) {
       setIsLogin(true);
@@ -56,5 +55,4 @@ const Header = () => {
     </div>
   );
 };
-
 export default Header;

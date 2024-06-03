@@ -1,3 +1,5 @@
+
+import React, {useEffect, useState} from "react";
 import React, {useState} from "react";
 import {useNavigate} from "react-router-dom";
 import {login} from "../apiCalls";
@@ -8,7 +10,6 @@ const Login = () => {
   const [id, setId] = useState("");
   const [pwd, setPwd] = useState("");
   const navigate = useNavigate();
-
   const handleIdChange = e => setId(e.target.value);
   const handlePwdChange = e => setPwd(e.target.value);
 
@@ -20,6 +21,14 @@ const Login = () => {
       alert("아이디/비밀번호가 다릅니다.");
     }
   };
+
+  useEffect(()=>{
+    console.log("쿠키", document.cookie);
+    // window.sessionStorage.setItem("session", `Bearer ${token}`);
+    // console.log("로그인 성공, 토큰 저장됨");
+
+  });
+  
 
   return (
     <div className="login-container">
