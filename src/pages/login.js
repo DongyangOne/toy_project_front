@@ -1,4 +1,8 @@
+<<<<<<< HEAD
 import React, {useEffect, useState} from "react";
+=======
+import React, {useState} from "react";
+>>>>>>> f8138f00a9de77ef3c26ce34f8667ec938a58398
 import {useNavigate} from "react-router-dom";
 import {login} from "../apiCalls";
 import Header from "../components/Header";
@@ -8,6 +12,10 @@ const Login = () => {
   const [id, setId] = useState("");
   const [pwd, setPwd] = useState("");
   const navigate = useNavigate();
+<<<<<<< HEAD
+=======
+
+>>>>>>> f8138f00a9de77ef3c26ce34f8667ec938a58398
   const handleIdChange = e => setId(e.target.value);
   const handlePwdChange = e => setPwd(e.target.value);
 
@@ -16,7 +24,7 @@ const Login = () => {
       await login(id, pwd);
       navigate("/");
     } catch (error) {
-      alert('아이디/비밀번호가 다릅니다.'); 
+      alert("아이디/비밀번호가 다릅니다.");
     }
   };
 

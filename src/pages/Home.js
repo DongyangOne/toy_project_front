@@ -14,7 +14,10 @@ const Home = () => {
             navigate("/diary");
           } else {
             alert("로그인이 필요한 서비스입니다.");
+<<<<<<< HEAD
             navigate("/login");
+=======
+>>>>>>> f8138f00a9de77ef3c26ce34f8667ec938a58398
           }
         }}
         className="writing-btn"
@@ -22,6 +25,10 @@ const Home = () => {
         일기 쓰기
       </button>
       <div className="tree-container">
+<<<<<<< HEAD
+=======
+        {/* 나무 이미지 */}
+>>>>>>> f8138f00a9de77ef3c26ce34f8667ec938a58398
         <img
           src="/path/to/your/tree/image.png"
           alt="Tree"

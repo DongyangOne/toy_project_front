@@ -5,15 +5,27 @@ import {useEffect, useState} from "react";
 const Header = () => {
   const navigate = useNavigate();
   const [isLogin, setIsLogin] = useState(false);
+<<<<<<< HEAD
+=======
+
+>>>>>>> f8138f00a9de77ef3c26ce34f8667ec938a58398
   const logout = () => {
     window.sessionStorage.removeItem("session");
     setIsLogin(false);
   };
+<<<<<<< HEAD
+=======
+
+>>>>>>> f8138f00a9de77ef3c26ce34f8667ec938a58398
   useEffect(() => {
     if (window.sessionStorage.getItem("session")) {
       setIsLogin(true);
     }
   }, []);
+<<<<<<< HEAD
+=======
+
+>>>>>>> f8138f00a9de77ef3c26ce34f8667ec938a58398
   return (
     <div className="header">
       <div
